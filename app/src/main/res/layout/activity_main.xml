@@ -63,6 +63,7 @@
 
     <ImageView
         android:id="@+id/imageViewPrevious"
+        android:onClick="previous"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="60dp"
@@ -82,6 +83,7 @@
 
     <ImageView
         android:id="@+id/imageViewPlay"
+        android:onClick="play"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
@@ -104,6 +106,7 @@
 
     <ImageView
         android:id="@+id/imageViewNext"
+        android:onClick="next"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
