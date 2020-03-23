@@ -56,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void previous(View view) {
+        seekBar.setProgress(0);
+        mediaPlayer.seekTo(0);
+        mediaPlayer.pause();
+        playPause.setImageResource(R.drawable.ic_play_arrow_24dp);
     }
 
     public void play(View view) {
@@ -69,5 +73,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void next(View view) {
+        seekBar.setProgress(mediaPlayer.getDuration());
+        mediaPlayer.seekTo(mediaPlayer.getDuration());
+        mediaPlayer.pause();
+        playPause.setImageResource(R.drawable.ic_play_arrow_24dp);
     }
 }
