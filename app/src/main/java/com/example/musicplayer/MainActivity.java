@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//Play
         playPause = (ImageView)findViewById(R.id.imageViewIconPlay);
+
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.original);
 
         seekBar = (SeekBar)findViewById(R.id.seekBar);
