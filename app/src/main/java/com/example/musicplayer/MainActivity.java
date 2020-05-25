@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //Play
-
         playPause = (ImageView)findViewById(R.id.imageViewIconPlay);
 
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.original);
